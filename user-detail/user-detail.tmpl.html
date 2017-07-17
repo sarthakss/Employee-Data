@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Employee Details</h3>
+  </div>
+  <div class="panel-body">
+<div><img  class="pic" ng-src="{{userDetailVm.user.profilePic}}"></div>
+<p>ID: {{userDetailVm.user.id}}</p>
+<p>FIRSTNAME: {{userDetailVm.user.firstName}}</p>
+<p>LASTNAME: {{userDetailVm.user.lastName}}</p>
+<p>EMAIL: {{userDetailVm.user.email}}</p>
+<p>ADDRESS: {{userDetailVm.user.address}}</p>
+<p>DATACREATED: {{userDetailVm.user.dataCreated}}</p>
+<p>COMPANY: {{userDetailVm.user.company}}</p>
+
+  </div>
+</div>
+<a class="btn btn-primary" href="#!/users" role="button">Go back to Employee List</a>

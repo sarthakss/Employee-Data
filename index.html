@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <ul class="nav nav-pills">
+    <!--<li><a href="#!/users">UserList</a></li>-->
+    <!--<li><a href="#!/add-user">Add User</a></li>-->
+     <!--<li><a href="#!/remove">Updated List</a></li>-->
+  </ul>
+
+  <div ng-view>
+
+  </div>
+
+
+
+  <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="user.service.js"></script>
+  <script src="user-list/user-list.controller.js"></script>
+  <script src="user-detail/user-detail.controller.js"></script>
+  <script src="remove-user/remove-user.controller.js"></script>
+</body>
+
+</html>

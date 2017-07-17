@@ -1,0 +1,26 @@
+<h1>Employee Data</h1>
+<input type="text" placeholder="Search Employee"  ng-model="userListVm.searchText">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Id</th>
+      <th ng-click="userListVm.sorter.sortBy='firstName'; userListVm.sorter.sortOrder = !userListVm.sorter.sortOrder;">Name</th>
+      <th>Email</th>
+      <th>Company</th>
+      <th>Details</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="user in userListVm.users | filter: userListVm.searchText | orderBy:userListVm.sorter.sortBy:userListVm.sorter.sortOrder">
+      <td><img ng-src="{{user.profilePic}}"></td>
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}} {{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.company.name}}</td>
+      <td><a ng-href="#!/users/{{user.id}}" class="glyphicon glyphicon-new-window"></a></td>
+      <td><a ng-href="#!/users/remove/{{user.id}}" class="glyphicon glyphicon-remove"></a></td>
+    </tr>
+  </tbody>
+</table>

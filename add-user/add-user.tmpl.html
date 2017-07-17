@@ -1,0 +1,24 @@
+<h1>Add User</h1>
+<form ng-controller="insertEmpCtrl" ng-submit="insertEmp()">
+  <div class="form-group">
+    <label for="exampleInputId">Id</label>
+    <input type="id" class="form-control" id="exampleInputId" placeholder="Enter Id" ng-model="formData.id"/>
+  </div>
+   <div class="form-group">
+    <label for="exampleInputFirstName">First Name</label>
+    <input type="firstname" class="form-control" id="exampleInputFirstName" placeholder="Enter First Name" ng-model="formData.firstname"/>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputLastName">Last Name</label>
+    <input type="lastname" class="form-control" id="exampleInputLastName" placeholder="Enter Last Name" ng-model="formData.lastname"/>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" ng-model="formData.email"/>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputCompany">Company</label>
+    <input type="company" class="form-control" id="exampleInputCompany" placeholder="Enter Company" ng-model="formData.company"/>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
